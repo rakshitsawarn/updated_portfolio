@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio - Rakshit Sawarn</title>
+
+  <!-- bootstrap css cdn link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- bootstrap icon cdn link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+  <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- jquery cdn link  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+      <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-menu-button-fill"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Projects</a>
+          </li>
+        </ul>
+      </div>
+      <a href="#contact" style="text-decoration: none;">
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+      </a>
+
+    </div>
+  </nav>
+  <!-- navbar ends here -->
+
+  <!-- home section starts  -->
+  <section class="home pt-5 pb-5" id="home">
+    <div class="row justify-content-evenly align-middle">
+      <!-- here data-aos is used for adding aos animation  -->
+      <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+        <h2 style="color: #3f396d">
+          Hello! I Am <br /><span class="c-orange">Rakshit Sawarn</span>
+        </h2>
+        <p class="text-muted">
+          I’m a Student Researcher and Software Developer passionate about AI, Machine Learning, and Computer Vision. My
+          work spans from building real-world applications to training AI/ML models that adapt, learn, and solve
+          meaningful problems.
+
+          I’ve worked on deepfake detection, multimodal analysis, and image-based intelligence systems, turning research
+          into functional solutions. I value clarity over complexity and thrive in both independent and collaborative
+          environments. Each project teaches me to think sharper, work smarter, and deliver results.
+
+          Always open to opportunities in AI research, software development, and innovative R&D projects.
+        </p>
+
+        <a href="" class="link ms-4 d-none">See My Work</a>
+      </div>
+      <div class="col-10 col-md-4 d-none d-md-block text-center">
+        <img src="images/me.jpg" class="img-fluid rounded-circle" alt="Meri Pyari Si Photo" />
+      </div>
+
+    </div>
+  </section>
+  <!-- home section ends here -->
+
+  <!-- expertise section starts -->
+  <section class="expertise mt-5" id="service">
+    <div class="heading text-center">
+      <small>My Expertise</small>
+      <h3>
+        Provide Wide Range of <br />
+        Services
+      </h3>
+    </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-10 col-md-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Website Development</h4>
+            <p class="text-muted">
+              I engineer dynamic websites with pixel-perfect UIs and solid backends using the MERN stack and Firebase.
+              From sleek landing pages to full-fledged platforms, I blend design with logic to deliver seamless web
+              experiences.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Application Development</h4>
+            <p class="text-muted">
+              I craft intelligent Android apps using Java/Kotlin in Android Studio, merging clean design with AI-powered
+              functionality. My apps are built for performance, scalability, and that perfect native feel users love.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Debugging</h4>
+            <p class="text-muted">
+              Whether it’s a sneaky CSS bug or a backend logic fail, I’m the guy who finds it, fixes it, and smiles
+              doing it. Debugging isn’t just troubleshooting — it’s my way of perfecting every line of code.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon4.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Research and Development</h4>
+            <p class="text-muted">
+              At the intersection of AI and innovation, I explore next-gen solutions like deepfake detection, fake
+              review filtering, and blockchain-backed authentication. I don't just build — I experiment, iterate, and
+              push boundaries.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- expertise section ends here -->
+
+  <!-- skill section starts -->
+  <section class="skill mt-5 py-5 bg-light" id="about">
+    <div class="container-fluid">
+      <div class="row justify-content-center mb-4">
+        <h2 class="text-center fw-bold">My Skillset</h2>
+      </div>
+      <div class="row justify-content-center g-4 px-3">
+
+        <!-- HTML & CSS -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress html-css">
+              <span class="progress-value html-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">HTML & CSS</span>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress javascript">
+              <span class="progress-value javascript-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- React -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress react"> <!-- Class should be 'react' -->
+              <span class="progress-value react-progress">0%</span> <!-- Class should be 'react-progress' -->
+            </div>
+            <br />
+            <span class="text">React</span>
+          </div>
+        </div>
+
+
+
+        <!-- Node -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress node">
+              <span class="progress-value node-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">Node</span>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress python">
+              <span class="progress-value python-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">Python</span>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress java">
+              <span class="progress-value java-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">Java</span>
+          </div>
+        </div>
+
+
+        <!-- Kotlin -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress kotlin">
+              <span class="progress-value kotlin-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">Kotlin</span>
+          </div>
+        </div>
+
+        <!-- R -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress r">
+              <span class="progress-value r-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">R</span>
+          </div>
+        </div>
+
+
+        <!-- SQL -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress sql">
+              <span class="progress-value sql-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">SQL</span>
+          </div>
+        </div>
+
+
+        <!-- MongoDB -->
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress mongo">
+              <span class="progress-value mongo-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">MongoDB</span>
+          </div>
+        </div>
+
+
+        <!-- C -->
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress c">
+              <span class="progress-value c-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">C</span>
+          </div>
+        </div>
+
+
+
+        <!-- Git and Github -->
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="progress-card text-center">
+            <div class="circular-progress git">
+              <span class="progress-value git-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">Git and Github</span>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+  <!-- skill section ends -->
+
+
+
+
+  <section id="experience" class="container py-5">
+    <h2 class="text-center mb-5 fw-bold">Experience</h2>
+
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Software Engineer (Internship)</h5>
+            <h6 class="card-subtitle mb-2 text-primary">ICapital Academy and Coposure Advisory LLP · Remote</h6>
+            <ul class="mt-3 mb-0">
+              <li>Contributed to dynamic, SSL-enabled financial platform development.</li>
+              <li>Integrated LMS, AI chatbots, financial tools, and personalized planning modules.</li>
+              <li>Tech stack: HTML, CSS, JavaScript, Bootstrap, GitHub, Jenkins.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">AI Model Trainer (Internship)</h5>
+            <h6 class="card-subtitle mb-2 text-primary">GravEiens Eduservices</h6>
+            <ul class="mt-3 mb-0">
+              <li>Trained AI systems using enhanced datasets in AI environments.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Software Developer (Internship)</h5>
+            <h6 class="card-subtitle mb-2 text-primary">DEFINITI SOFTWARE PVT LTD</h6>
+            <ul class="mt-3 mb-0">
+              <li>Designed and developed DE-FAKE counterfeit detection software.</li>
+              <li>Integrated ViT, watermarking, barcode, and blockchain verification layers.</li>
+              <li>Tech: Python, Machine Learning, Java, Android, Communication, UI/UX.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Freelancer</h5>
+            <h6 class="card-subtitle mb-2 text-primary">Remote</h6>
+            <ul class="mt-3 mb-0">
+              <li>Delivered multiple web and Android projects in online/offline formats.</li>
+              <li>Skills: MERN Stack, Flutter, UI/UX Design, System Compatibility Testing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Instructor (Internship)</h5>
+            <h6 class="card-subtitle mb-2 text-primary">NIIT Foundation</h6>
+            <ul class="mt-3 mb-0">
+              <li>Conducted virtual sessions in English for Job and Programming Languages.</li>
+              <li>Skills: Soft Skills, Public Speaking, Teaching, Communication.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Software Developer (Internship)</h5>
+            <h6 class="card-subtitle mb-2 text-primary">CodSoft</h6>
+            <ul class="mt-3 mb-0">
+              <li>Built weather apps and interactive websites including mini-games.</li>
+              <li>Focused on performance optimization and visual aesthetics.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Software Developer (Internship)</h5>
+            <h6 class="card-subtitle mb-2 text-primary">Cognifyz Technologies</h6>
+            <ul class="mt-3 mb-0">
+              <li>Improved website performance and speed metrics for production apps.</li>
+              <li>Skills: Web Performance Optimization, Responsive Design.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Software Developer (Internship)</h5>
+            <h6 class="card-subtitle mb-2 text-primary">Oasis Infobyte</h6>
+            <ul class="mt-3 mb-0">
+              <li>Created front-end designs and UI for multiple interactive applications.</li>
+              <li>Skills: HTML, CSS, JavaScript, UX Design, Critical Thinking.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Software Developer (Internship)</h5>
+            <h6 class="card-subtitle mb-2 text-primary">Prodigy Infotech</h6>
+            <ul class="mt-3 mb-0">
+              <li>Created front-end designs and UI for multiple interactive applications.</li>
+              <li>Skills: HTML, CSS, JavaScript, UX Design, Critical Thinking.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Portfolio Section -->
+  <div class="row justify-content-center mb-4">
+    <h2 class="text-center fw-bold">Projects</h2>
+  </div>
+  <div id="myBtnContainer" class="text-center mt-5">
+    <button class="btn btn-outline-primary filter-item m-1 active" data-filter="all">All</button>
+    <button class="btn btn-outline-secondary filter-item m-1" data-filter="game">Research</button>
+    <button class="btn btn-outline-success filter-item m-1" data-filter="webapp">Website</button>
+    <button class="btn btn-outline-warning filter-item m-1" data-filter="mobile">Mobile App</button>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="portfolio-body mt-4">
+    <div class="row justify-content-center px-3 g-4">
+
+      <!-- Card Template -->
+      <div class="post col-md-4 col-sm-6 game all" data-aos="fade-up">
+        <div class="card h-100 shadow-lg border-0 rounded-4">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Counterfeit Currency Detection</h5>
+            <div class="mt-2">
+              <span class="badge bg-primary me-1">Research Paper</span>
+              <span class="badge bg-info text-dark">YUKTI Innovation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post col-md-4 col-sm-6 game all" data-aos="fade-up">
+        <div class="card h-100 shadow-lg border-0 rounded-4">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Deepfake Detection</h5>
+            <div class="mt-2">
+              <span class="badge bg-primary me-1">Research Paper</span>
+              <span class="badge bg-info text-dark">YUKTI Innovation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post col-md-4 col-sm-6 game all" data-aos="fade-up">
+        <div class="card h-100 shadow-lg border-0 rounded-4">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Counterfeit Product Detection</h5>
+            <div class="mt-2">
+              <span class="badge bg-success me-1">Patent</span>
+              <span class="badge bg-secondary">Copyright</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Websites -->
+      <div class="post col-md-4 col-sm-6 webapp all" data-aos="fade-up">
+        <div class="card h-100 shadow-lg border-0 rounded-4">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">E-Commerce</h5>
+            <div class="mt-2">
+              <span class="badge bg-dark me-1">React</span>
+              <span class="badge bg-dark">Node</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post col-md-4 col-sm-6 webapp all" data-aos="fade-up">
+        <div class="card h-100 shadow-lg border-0 rounded-4">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">DEFINITI SOFTWARE</h5>
+            <div class="mt-2">
+              <span class="badge bg-dark me-1">HTML&CSS</span>
+              <span class="badge bg-dark">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post col-md-4 col-sm-6 webapp all" data-aos="fade-up">
+        <div class="card h-100 shadow-lg border-0 rounded-4">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">BrandSight</h5>
+            <div class="mt-2">
+              <span class="badge bg-dark">MERN Stack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Apps -->
+      <div class="post col-md-4 col-sm-6 mobile all" data-aos="fade-up">
+        <div class="card h-100 shadow-lg border-0 rounded-4">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">DE-FAKE</h5>
+            <div class="mt-2">
+              <span class="badge bg-warning text-dark me-1">Java</span>
+              <span class="badge bg-warning text-dark me-1">Kotlin</span>
+              <span class="badge bg-warning text-dark">XML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post col-md-4 col-sm-6 mobile all" data-aos="fade-up">
+        <div class="card h-100 shadow-lg border-0 rounded-4">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Foodies</h5>
+            <div class="mt-2">
+              <span class="badge bg-warning text-dark me-1">Java</span>
+              <span class="badge bg-warning text-dark me-1">Kotlin</span>
+              <span class="badge bg-warning text-dark">XML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post col-md-4 col-sm-6 mobile all" data-aos="fade-up">
+        <div class="card h-100 shadow-lg border-0 rounded-4">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Currency Detection (Mobile)</h5>
+            <div class="mt-2">
+              <span class="badge bg-warning text-dark me-1">Java</span>
+              <span class="badge bg-warning text-dark me-1">Kotlin</span>
+              <span class="badge bg-warning text-dark">XML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post col-md-4 col-sm-6 mobile all" data-aos="fade-up">
+        <div class="card h-100 shadow-lg border-0 rounded-4">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Deepfake Detector</h5>
+            <div class="mt-2">
+              <span class="badge bg-warning text-dark">Flutter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- contact section starts -->
+  <section class="contact py-5" id="contact">
+    <div class="heading text-center">
+      <small>Get in Touch</small>
+      <h3>Any Questions? Feel Free to Contact</h3>
+    </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>NIIT University, NH 8, Delhi - Jaipur Expy, Neemrana, Majrakath, Rajasthan 301705</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>+91 7479687456</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-send-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>rakshitsawarn@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- Bootstrap CSS (Add this in <head> if not already included) -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Centered Container -->
+      <div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+        <div class="col-md-6 col-lg-5 col-11">
+          <form action="https://formsubmit.co/rakshitsawarn@gmail.com" method="POST"
+            class="bg-white p-5 rounded-4 shadow-lg">
+            <h2 class="mb-4 text-center fw-bold text-primary">Contact Me</h2>
+
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" name="name" class="form-control rounded-3" placeholder="Your Name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">E-mail</label>
+              <input type="email" name="email" class="form-control rounded-3" placeholder="you@example.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Mobile No.</label>
+              <input type="number" name="mobile" class="form-control rounded-3" placeholder="e.g., +91 9876543210"
+                required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea name="message" rows="4" class="form-control rounded-3" placeholder="Write your message..."
+                required></textarea>
+            </div>
+
+            <!-- Hidden Fields -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary px-5 py-2 rounded-pill mt-3">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  <!-- contact section ends here -->
+
+  <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+  <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- footer section starts  -->
+  <footer class="text-center text-muted py-4">
+    <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+    <div class="link-group mt-5" data-aos="fade-up">
+      <a href="#home">Home</a>
+      <div class="vr"></div>
+      <a href="#service">Service</a>
+      <div class="vr"></div>
+      <a href="#about">About</a>
+      <div class="vr"></div>
+      <a href="#experience">Experience</a>
+
+      <div class="vr"></div>
+      <a href="#portfolio">Projects</a>
+      <div class="vr"></div>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="social-links mt-5" data-aos="fade-up">
+      <a href="https://github.com/rakshitsawarn"><button href="" class="rounded-pill dribble">
+          <i class="bi bi-github"></i>
+        </button></a>
+      <a href="https://www.linkedin.com/in/rakshitsawarn/"><button href="" class="rounded-pill whatsapp">
+          <i class="bi bi-linkedin"></i>
+        </button></a>
+    </div>
+    <hr class="text-muted my-4" />
+
+
+  </footer>
+  <!-- footer section ends here -->
+
+  <!-- bootstrap javascript cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS library javascript link  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // initializing AOS library
+    AOS.init({
+      duration: 1000,
+      offset: 50,
+    });
+  </script>
+  <!-- custom js file linking -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
